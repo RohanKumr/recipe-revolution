@@ -146,10 +146,14 @@ $(document).ready(function () {
 
 
   allIngredients.forEach(({ name, image }) => {
-    $(".ingredients-container").append(`<div class="ingredient-card">
-        <img src="${image}" alt="${name}" />
-        <p>${name}</p>
-      </div>`)
+    $(".ingredients-container").append(`
+      <a href="./index.html?search=${name}">
+        <div class="ingredient-card">
+          <img src="${image}" alt="${name}" />
+          <p>${name}</p>
+        </div>
+      </a>
+      `)
 
     $('.ingredient-card').animate({
       opacity: 1,

@@ -154,8 +154,19 @@ const allIngredients = ["Chicken", "Yogurt", "Tomato", "Onion", "Garlic", "Ginge
 
 
 $(document).ready(() => {
-  function generateHTML(searchTerm) {
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlSearchString = urlParams.get('search').toLocaleLowerCase();
+
+  if(urlSearchString) {
+    $("#search").val(urlSearchString)
+    generateHTML(urlSearchString);
+
+  }
+
+  console.log({ urlSearchString });
+
+  function generateHTML(searchTerm) {
     const filteredData = RecipesData.filter(item => {
       return item.ingredients.map(ign => ign.toLowerCase()).includes(searchTerm.toLowerCase())
     });
