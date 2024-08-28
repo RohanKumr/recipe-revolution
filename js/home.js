@@ -156,7 +156,7 @@ const allIngredients = ["Chicken", "Yogurt", "Tomato", "Onion", "Garlic", "Ginge
 $(document).ready(() => {
 
   const urlParams = new URLSearchParams(window.location.search);
-  const urlSearchString = urlParams.get('search').toLocaleLowerCase();
+  const urlSearchString = urlParams?.get('search')?.toLocaleLowerCase();
 
   if(urlSearchString) {
     $("#search").val(urlSearchString)
@@ -164,7 +164,6 @@ $(document).ready(() => {
 
   }
 
-  console.log({ urlSearchString });
 
   function generateHTML(searchTerm) {
     const filteredData = RecipesData.filter(item => {
@@ -183,7 +182,7 @@ $(document).ready(() => {
       </a>
         <div id="${item.dialogId}" title="${item.title}" style="display: none;" >
           <p>${item.dialogContent}</p>
-          <p>Check out more <a href="../pages/recipes.html#${item.id}">here</a></p>
+          <p>Check out more <a href="./recipes.html#${item.id}">here</a></p>
         </div>
       </section>
     `).join('');
