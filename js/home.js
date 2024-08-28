@@ -2,7 +2,7 @@ const RecipesData = [
   {
     id: "dish1",
     title: "Chicken Tikka Masala",
-    imageSrc: "../images/chicken-tikka.jpg",
+    imageSrc: "./images/chicken-tikka.jpg",
     // Free Photo | Top view kharcho with green pepper and tomato and greens in dark plate. (2020, April 18).Freepik.https://www.freepik.com/free-photo/top-view-kharcho-with-green-pepper-tomato-greens-dark-plate_7729876.htm#fromView=search&page=1&position=35&uuid=5a58ab6a-6ac8-4a22-9678-4d624215af51
     width: 300,
     height: 300,
@@ -32,7 +32,7 @@ const RecipesData = [
   {
     id: "dish2",
     title: "Palak Paneer",
-    imageSrc: "../images/palak-paneer.jpg",
+    imageSrc: "./images/palak-paneer.jpg",
     // Free Photo | Flat lay japanese food in bowls arrangement. (2020, December 24). Freepik. https://www.freepik.com/free-photo/flat-lay-japanese-food-bowls-arrangement_11827353.htm#fromView=search&page=1&position=17&uuid=10241b70-ca58-438d-bfc9-b644e2b575dd
     width: 300,
     height: 300,
@@ -60,7 +60,7 @@ const RecipesData = [
   {
     id: "dish3",
     title: "Dal Tadka",
-    imageSrc: "../images/dal-tadka.jpg",
+    imageSrc: "./images/dal-tadka.jpg",
     // Free Photo | Vegetable soup with carrot and tomato slices. (2020, March 19). Freepik. https://www.freepik.com/free-photo/vegetable-soup-with-carrot-tomato-slices_7303406.htm#fromView=search&page=1&position=4&uuid=4cdd2435-3d0e-425d-adda-fad7d4568be6
     width: 300,
     height: 300,
@@ -89,7 +89,7 @@ const RecipesData = [
   {
     id: "dish4",
     title: "Chole",
-    imageSrc: "../images/chole.jpg",
+    imageSrc: "./images/chole.jpg",
     width: 300,
     height: 300,
     dialogId: "dialog4",
@@ -116,7 +116,7 @@ const RecipesData = [
   {
     id: "dish5",
     title: "Shahi Paneer",
-    imageSrc: "../images/shahi-paneer.jpg",
+    imageSrc: "./images/shahi-paneer.jpg",
     // Free Photo | Flat lay indian food arrangement. (2020, October 30).Freepik.https://www.freepik.com/free-photo/flat-lay-indian-food-arrangement_10869763.htm#fromView=search&page=1&position=4&uuid=56e3f16e-c85b-4bab-9b37-93315d6730f1
     width: 300,
     height: 300,
